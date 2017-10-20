@@ -1,5 +1,5 @@
 ## Following 2 functions will allow to keep the result
-## of evaluation of inverse matrix in cash since it
+## of evaluation of inverse matrix in cache since it
 ## was initially calculated untill the matrix was
 ## changed. Comment 'getting cached data' informs
 ## user whether inverse calculation has been already done.
