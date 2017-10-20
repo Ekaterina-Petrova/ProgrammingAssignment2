@@ -1,11 +1,11 @@
 ## Following 2 functions will allow to keep the result
-## of evaluation of inverse matrix in cache since it
+## of evaluation of the inverse matrix in cache since it
 ## was initially calculated untill the matrix was
 ## changed. Comment 'getting cached data' informs
-## user whether inverse calculation has been already done.
+## the user whether inverse calculation has been already done.
 
-## makeCacheMatrix create a special "matrix" - a list with set,
-## get, setinverse, getinverse methods.
+## makeCacheMatrix creates a special "matrix" - a list with set,
+## get, setinverse, and getinverse methods.
 
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
@@ -24,7 +24,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## cacheSolve function calculates the inverse matrix
 ## or retrieve the result from the cache in case
-## it was done for the same matrix before
+## it was done for the same matrix before. Result
+## of inverse calculation is transfered to makeCacheMatrix
 
 cacheSolve <- function(x, ...) {
     m <- x$getinverse()
